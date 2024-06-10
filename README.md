@@ -1,2 +1,68 @@
-# ADHD-04
-ACTIVIDAD PARA DESARROLLAR HABILIDADES Y DESTREZAS (ADHD 04)
+
+#### ¿Qué es TypeScript?
+
+Es un superset de JavaScript, esto significa que los programas de JavaScript son programas validos de Typescript. Esto permite que podamos integrar Typescript en proyectos existentes de JavaScript sin tener que Re implementar todo el código del proyecto en Typescript.
+
+#### ¿Qué ventajas ofrece TypeScript frente a JavaScript puro?
+
+Integración con herramientas: Typescript incorpora un componente el cual encapsula al compilador y los expone como un servicio para los editores de código. Esto nos brinda una gran capacidad para validar el código a medida que se escribe y facilita para que podamos recibir ayuda durante el proceso de desarrollo.
+
+Programación orientada a objetos: Typescript tiene una sintaxis parecida a Java o C#. Este lenguaje transpila el código a JavaScript compatible con cada navegador, y asi puede implementar funcionalidades como Async Await, Spreed Operators etc, que están disponibles en versiones de ECMAScript
+
+Muestra errores de compilación: Gracias a esto las probabilidades de que se produzca un error son mucho menores.
+
+#### ¿Cómo se compila un archivo TypeScript para convertirlo a JavaScript?
+
+    1) Agregue archivos TypeScript ( .ts) o TypeScript JSX ( .tsx) al proyecto y, a continuación, agregue código de TypeScript.
+
+    2) En package.json, agregue compatibilidad con los comandos de limpieza y compilación de Visual Studio mediante los siguientes scripts.
+ 
+    3) Para realizar una compilación mediante una herramienta de terceros como webpack, puede agregar un script de compilación de línea de comandos al archivo package.json:
+
+#### ¿Qué extensión de archivo se utiliza para los archivos TypeScript?
+
+La elección de la extensión ".ts" para los archivos TypeScript se basa en la convención de nombres comúnmente utilizada en la industria de la programación.
+
+En este caso, la "T" en ".ts" hace referencia a "TypeScript", el nombre del lenguaje de programación desarrollado por Microsoft. Usar una extensión de archivo específica ayuda a los desarrolladores a identificar rápidamente qué tipo de archivo están tratando y a asociarlo con el lenguaje y las herramientas adecuadas para su manipulación.
+
+#### ¿Cómo se define un tipo de dato en TypeScript?
+
+    1) En typescript hay dos maneras de definir datos, podemos usar la palabra “type” o “interface” 
+    Type: en el siguiente ejemplo definimos un dato llamado “MiTipo” que tiene un alias de tipo numero, luego le declaramos una variable “miVariable” al cual asignamos un valor 10.
+
+    2) Interface: En el siguiente ejemplo definimos una interfaz llamada “persona” la cual especifica la estructura de un objeto que tiene una propiedad “Nombre” de tipo string y una propiedad “edad” de tipo numero.
+
+#### ¿Qué son los tipos de unión y cómo se declaran?
+Las uniones permiten definir un tipo que puede contener uno o varios tipos de diferentes. Esto es útil cuando una variable, parámetro o propiedad que puede aceptar multiplos de datos.
+
+#### ¿Qué es un tipo literal en TypeScript y para qué se utiliza?
+Es un tipo de dato que representa un valor concreto, esto significa que en lugar de simplemente representar un rango de valores como los tipos de datos primitivos. Se utilizan principalmente para limitar el conjunto de posibles valores que una variable, parámetro o propiedad puede contener.
+
+####¿Qué son los tipos enumerados (Enums) y cómo se crean?
+Los enums permiten definir un conjunto de constantes con nombre. Su uso facilita la documentación de la intención o la creación de un conjunto de casos distintos. Los enums de TypeScript permiten definir un conjunto de constantes con nombre.
+
+#### ¿Cómo se define un tipo alias y cuándo es útil?
+un tipo alias se define utilizando la palabra clave type. Permite crear un nombre alternativo para otro tipo existente, lo que puede hacer que tu código sea más legible y mantenible. Puedes usar un tipo alias para referirte a tipos complejos o repetitivos con un nombre más corto y descriptivo.
+
+#### ¿Cómo se definen las funciones con tipos en TypeScript?
+    1) function: Es la palabra clave para declarar una función en TypeScript.
+    nombreFuncion: Es el nombre de la función.
+    2) (parametro1: Tipo1, parametro2: Tipo2): Lista de parámetros de la función,donde parametro1, parametro2, etc., son los nombres de los parámetros, y Tipo1, Tipo2, etc., son los tipos de esos parámetros.
+
+    3) TipoDeRetorno: Es el tipo de dato que la función devolverá como resultado.
+#### ¿Qué son los parámetros opcionales y los parámetros predeterminados en funciones?
+    Los parámetros opcionales son aquellos que pueden ser pasados a una función pero no son obligatorios.
+
+    Se definen añadiendo un signo de interrogación ? después del nombre del parámetro en la lista de parámetros de la función.
+
+    Cuando se llama a la función, se puede proporcionar o no un valor para estos parámetros. Si no se proporciona un valor, su valor será undefined.
+
+    Esto es útil cuando deseas que algunos parámetros sean opcionales para permitir llamadas de función más flexibles.
+#### ¿Cuáles son algunas mejores prácticas para escribir código limpio y mantenible en TypeScript?
+
+    1) Utiliza tipos estáticos: Aprovecha al máximo el sistema de tipos de TypeScript. Define tipos para tus variables, parámetros de funciones y valores de retorno para evitar errores y hacer que tu código sea más seguro y fácil de entender.
+
+    2) Nombra tus variables y funciones de forma descriptiva: Utiliza nombres significativos que reflejen el propósito y la función de las variables y funciones. Esto facilita la comprensión del código y reduce la necesidad de comentarios excesivos.
+
+    3) Divide tu código en funciones pequeñas y cohesivas: Aplica el principio de responsabilidad única (SRP) descomponiendo tareas complejas en funciones más pequeñas y específicas. Esto hace que tu código sea más fácil de entender, probar y mantener.
+
