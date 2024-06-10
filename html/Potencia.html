@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Potencia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1>Calculadora de Potencia</h1>
+    <div class="form-group">
+      <label for="baseInput">Base:</label>
+      <input type="number" class="form-control" id="baseInput">
+    </div>
+    <div class="form-group">
+      <label for="exponenteInput">Exponente:</label>
+      <input type="number" class="form-control" id="exponenteInput">
+    </div>
+    <button type="button" class="btn btn-primary" id="btnCalc" name="btnCalc"
+      onclick="calcularPotencia()">Calcular</button>
+    <div id="resultado" class="mt-3" type="text"></div>
+    <section class="mb-3">
+      <a class="btn btn-primary" href="/index.html" role="button">Pagina Principal</a>
+    </section>
+  </div>
+
+  <!-- TypeScript -->
+  <script src="/js/potencia.js"></script>
+</body>
+
+</html>

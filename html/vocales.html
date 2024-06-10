@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Vocales</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1>Contador de Vocales</h1>
+  <div class="form-group">
+    <label for="textoInput">Ingresa un texto:</label>
+    <input class="form-control" id="textoInput" name="textoInput" placeholder="Escribe un texto"></input>
+  </div>
+  <button class="form-control btn btn-primary" id="btnVocal" name="btnVocal" onclick="contarVocales()">Contar Vocales</button>
+  <div id="resultado" class="mt-3"></div>
+  <section class="mb-3">
+    <a class="btn btn-primary" href="/index.html" role="button">Pagina Principal</a>
+</section>
+</div>
+
+<!-- TypeScript -->
+<script src="/js/vocales.js" type="module"></script>
+
+</body>
+</html>

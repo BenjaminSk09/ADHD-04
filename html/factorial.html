@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Factorial</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h1>Calculadora de Factorial</h1>
+    <div class="form-group">
+      <label for="numeroInput">Ingresa un número:</label>
+      <input type="number" class="form-control" id="numeroInput" placeholder="Escribe un número">
+    </div>
+    <button class="form-control btn btn-primary" id="btnFacto" name="btnFacto" onclick="calcularFactorial()">Calcular
+      Factorial</button>
+    <div id="resultado" class="mt-3"></div>
+    <section class="mb-3">
+      <a class="btn btn-primary" href="/index.html" role="button">Pagina Principal</a>
+  </section>
+  </div>
+  <script src="/js/factorial.js"></script>
+</body>
+
+</html>
